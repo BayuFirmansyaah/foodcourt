@@ -17,6 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -53,7 +54,7 @@
 
     <main>
       <!--Seribu Rasa Description-->
-      <div class="box-description">
+      <div class="box-description" data-aos="fade-up" data-aos-delay="500">
         <div class="content-description">
           <h1 class="title-description">Seribu Rasa</h1>
           <p>Makanan Lezat, Sehat, dan Bercita Rasa.</p>
@@ -67,7 +68,7 @@
       <!-- End of Seribu Rasa Description -->
 
       <!--About Us Homepage-->
-      <div class="about-sr">
+      <div class="about-sr" data-aos="zoom-in">
         <div class="about-image">
           <img src="img/about img.png" alt="About Img" />
         </div>
@@ -87,14 +88,14 @@
 
       <!--Offering-->
       <div class="offer">
-        <div class="offer-des">
+        <div class="offer-des" data-aos="fade-up">
           <h1 class="title3">Penawaran Kami</h1>
           <hr class="hr3" />
           <p>
             Inilah menu-menu makanan menarik khas Nusantara yang kami tawarkan!
           </p>
         </div>
-        <div class="grid">
+        <div class="grid" data-aos="fade-down">
           <div class="card">
             <img
               src="img/Rawon.jpeg"
@@ -203,6 +204,14 @@
       </footer>
       <!-- End of Footer -->
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:400,
+        easing: 'ease-in-out',
+        once: false
+      });
+    </script>
     <script src="./js/index.js"></script>
   </body>
 </html>
